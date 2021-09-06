@@ -1,0 +1,10 @@
+:root {
+  --logo-size: 100px;
+}
+.logo {
+  height: var(--logo-size);
+  width: var(--logo-size);
+}
+#logo-text {
+  color: var(--bs-blue);
+}
