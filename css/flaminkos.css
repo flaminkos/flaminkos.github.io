@@ -1,0 +1,22 @@
+.navbar-brand.flaminkos-title {
+  color: #2937f0;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.section-title {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+#contact-button {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand.flaminkos-title {
+    display: none;
+  }
+}

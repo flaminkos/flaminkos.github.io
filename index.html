@@ -1,68 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>Flaminkos</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
     <link
-      rel="shortcut icon"
-      href="images/flaminkos-logo.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
       rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/flaminkos.css" rel="stylesheet" />
   </head>
-
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/" id="logo-text">
-            <img
-              src="images/flaminkos-logo.png"
-              alt=""
-              class="d-inline-block logo"
-            />
-            Flaminkos
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
+      id="mainNav"
+    >
+      <div class="container px-5">
+        <img src="assets/img/flaminkos-logo-home.png" class="logo" />
+        <a class="navbar-brand fw-bold flaminkos-title" href="#">Flaminkos</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="#about-us">About us</a>
+            </li>
+          </ul>
+          <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+            <a
+              id="contact-button"
+              href="mailto:flaminkosdev@gmail.com?subject=Client inquiry&body=Hi guys, I'd like help with:"
+            >
+              <i class="bi-chat-text-fill me-2"></i>
+              <span class="small">Contact</span>
+            </a>
           </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <nav class="nav">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Services</a
-              >
-              <a class="nav-link" href="#">About us</a>
-            </nav>
-            <button type="button" class="btn btn-primary">Contact</button>
-          </div>
-        </div>
-      </nav>
-
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">
-            ...We are about to start flying soon! Please stay tuned for more
-            news...
-          </p>
         </div>
       </div>
-    </div>
+    </nav>
+    <!-- Mashead header-->
+    <header class="masthead">
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6">
+            <!-- Mashead text and app badges-->
+            <div class="mb-5 mb-lg-0 text-center text-lg-start">
+              <h1 class="display-1 lh-1 mb-3">Build and improve...</h1>
+              <p class="lead fw-normal text-muted mb-5">
+                Software consulting for Web and Mobile Apps. We can help you
+                improve your product, team performance and practices.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Masthead device mockup feature-->
+            <div class="masthead-device-mockup">
+              <svg
+                class="circle"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient
+                    id="circleGradient"
+                    gradientTransform="rotate(45)"
+                  >
+                    <stop class="gradient-start-color" offset="0%"></stop>
+                    <stop class="gradient-end-color" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+              <svg
+                class="shape-1 d-none d-sm-block"
+                viewBox="0 0 240.83 240.83"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="-32.54"
+                  y="78.39"
+                  width="305.92"
+                  height="84.05"
+                  rx="42.03"
+                  transform="translate(120.42 -49.88) rotate(45)"
+                ></rect>
+                <rect
+                  x="-32.54"
+                  y="78.39"
+                  width="305.92"
+                  height="84.05"
+                  rx="42.03"
+                  transform="translate(-49.88 120.42) rotate(-45)"
+                ></rect>
+              </svg>
+              <svg
+                class="shape-2 d-none d-sm-block"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+              <div class="device-wrapper">
+                <div
+                  class="device"
+                  data-device="iPhoneX"
+                  data-orientation="portrait"
+                  data-color="black"
+                >
+                  <div class="screen bg-black">
+                    <!-- PUT CONTENTS HERE:-->
+                    <!-- * * This can be a video, image, or just about anything else.-->
+                    <!-- * * Set the max width of your media to 100% and the height to-->
+                    <!-- * * 100% like the demo example below.-->
+                    <video
+                      muted="muted"
+                      autoplay=""
+                      loop=""
+                      style="max-width: 100%; height: 100%"
+                    >
+                      <source
+                        src="assets/img/demo-screen.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      id="services"
+      class="bg-gradient-primary-to-secondary section-title"
+    >
+      <div class="container px-5">
+        <h2 class="text-center text-white font-alt mb-4">Services</h2>
+      </div>
+    </section>
+    <!-- App features section-->
+    <section>
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+            <div class="container-fluid px-5">
+              <div class="row gx-5">
+                <div class="col-md-6 mb-5">
+                  <!-- Feature item-->
+                  <div class="text-center">
+                    <i
+                      class="bi-phone icon-feature text-gradient d-block mb-3"
+                    ></i>
+                    <h3 class="font-alt">Product design and development</h3>
+                    <p class="text-muted mb-0">
+                      Building Apps for Web, Mobile and other interactive
+                      software UX.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                  <!-- Feature item-->
+                  <div class="text-center">
+                    <i
+                      class="bi-camera icon-feature text-gradient d-block mb-3"
+                    ></i>
+                    <h3 class="font-alt">
+                      Engineering and business optimization
+                    </h3>
+                    <p class="text-muted mb-0">
+                      Improving processes and empowering your people to deliver
+                      more value.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                  <!-- Feature item-->
+                  <div class="text-center">
+                    <i
+                      class="bi-gift icon-feature text-gradient d-block mb-3"
+                    ></i>
+                    <h3 class="font-alt">Software architecture</h3>
+                    <p class="text-muted mb-0">
+                      Technical reviews and code improvements to build
+                      confidently with less bugs.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <!-- Feature item-->
+                  <div class="text-center">
+                    <i
+                      class="bi-patch-check icon-feature text-gradient d-block mb-3"
+                    ></i>
+                    <h3 class="font-alt">Mentoring</h3>
+                    <p class="text-muted mb-0">
+                      Specialized technical training and mentoring for your
+                      team.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-0">
+            <!-- Features section device mockup-->
+            <div class="features-device-mockup">
+              <svg
+                class="circle"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient
+                    id="circleGradient"
+                    gradientTransform="rotate(45)"
+                  >
+                    <stop class="gradient-start-color" offset="0%"></stop>
+                    <stop class="gradient-end-color" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+              <svg
+                class="shape-1 d-none d-sm-block"
+                viewBox="0 0 240.83 240.83"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="-32.54"
+                  y="78.39"
+                  width="305.92"
+                  height="84.05"
+                  rx="42.03"
+                  transform="translate(120.42 -49.88) rotate(45)"
+                ></rect>
+                <rect
+                  x="-32.54"
+                  y="78.39"
+                  width="305.92"
+                  height="84.05"
+                  rx="42.03"
+                  transform="translate(-49.88 120.42) rotate(-45)"
+                ></rect>
+              </svg>
+              <svg
+                class="shape-2 d-none d-sm-block"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="50" cy="50" r="50"></circle>
+              </svg>
+              <div class="device-wrapper">
+                <div
+                  class="device"
+                  data-device="iPhoneX"
+                  data-orientation="portrait"
+                  data-color="black"
+                >
+                  <div class="screen bg-black">
+                    <!-- PUT CONTENTS HERE:-->
+                    <!-- * * This can be a video, image, or just about anything else.-->
+                    <!-- * * Set the max width of your media to 100% and the height to-->
+                    <!-- * * 100% like the demo example below.-->
+                    <video
+                      muted="muted"
+                      autoplay=""
+                      loop=""
+                      style="max-width: 100%; height: 100%"
+                    >
+                      <source
+                        src="assets/img/demo-screen.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Basic features section-->
+    <section id="about-us" class="bg-light">
+      <div class="container px-5">
+        <div
+          class="row gx-5 align-items-center justify-content-center justify-content-lg-between"
+        >
+          <div class="col-12 col-lg-5">
+            <h2 class="display-4 lh-1 mb-4">About us</h2>
+            <p class="lead fw-normal text-muted mb-5 mb-lg-0">
+              We're a fresh digital business partnering with interesting projects and other companies.
+              We want to help people build their ideas and provide tools to keep growing on their own.
+            </p>
+          </div>
+          <div class="col-sm-8 col-md-6">
+            <div class="px-5 px-sm-0">
+              <img
+                class="img-fluid rounded-circle"
+                src="assets/img/flaminkos-logo.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- App badge section-->
+    <section class="bg-gradient-primary-to-secondary section-title">
+      <div class="container px-5"></div>
+    </section>
+    <!-- Footer-->
+    <footer class="bg-black text-center py-5">
+      <div class="container px-5">
+        <div class="text-white-50 small">
+          <div class="mb-2">&copy; Flaminkos. All Rights Reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
